@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202020;
+    color: #e0e0e0; /* Light gray text for better readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Image Styles */
+  img {
+    position: fixed;
+    top: 0;
+    left: 0; /* Align to top left corner */
+    width: 250px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+  }
+  
+  /* Chat Container Styles */
+  #chat-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #303030; /* Darker gray for chat container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+    border-radius: 8px;
+  }
+  
+  /* Messages Styles */
+  #messages {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #007bff; /* Blue border */
+    border-radius: 5px;
+    background-color: #404040; /* Slightly darker background for messages */
+  }
+  
+  /* Upload Form Styles */
+  #upload-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  #upload-form input, #upload-form button, #tipo-arquivo, #folder, #iniciar-automacao-btn {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #494949; /* Dark gray border */
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Initiate Automation Button Styles */
+  #iniciar-automacao-btn {
+    background-color: #007bff; /* Brand blue color */
+    color: white;
+    cursor: pointer;
+    border: none; /* Remove border for a cleaner look */
+  }
+  
+  #iniciar-automacao-btn:hover {
+    background-color: #0069d9; /* Darken blue on hover */
+  }
+  
+  /* Message Styles (Optional - You can keep these if needed) */
+  .message {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  .message.info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+  }
+  
+  .message.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  .automation-button {
+    background-color: #007bff; /* Brand blue color */
+    color: white;
+    padding: 10px;
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
