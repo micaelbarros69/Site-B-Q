@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Arquivos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.min.js"></script>
+    <img src="/B&Q.jpg" alt="">
+</head>
+
+<body>
+    <img src="data:image/png;base64,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" 
+    alt="logo">
+
+  
+    
+    <div id="chat-container">
+        <div id="messages"></div>
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="text" id="folder" name="folder" placeholder="Nome da Pasta">
+            <input type="file" name="files[]" multiple>
+            <button type="submit" class="automation-button">Enviar</button>
+        
+        </form>
+        <select id="tipo-arquivo">
+            <option value="OT">OT</option>
+            <option value="SGD">SGD</option>
+            <option value="KML">KML</option>
+            <option value="PRE-APR">PRE-APR</option>
+        </select>
+        <button id="iniciar-automacao-btn" class="automation-button">Iniciar Automação</button>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    
+</body>
+</html>
